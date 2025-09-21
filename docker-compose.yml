@@ -6,6 +6,6 @@ services:
     ports:
       - "8080:8080"
     environment:
-      - NEWS_API_KEY=${NEWS_API_KEY}
+      - NEWS_API_KEY=${8ee47ef486c94452ac826695e273067f}
       - NEWS_API_URL=https://newsapi.org/v2/top-headlines
     restart: unless-stopped
