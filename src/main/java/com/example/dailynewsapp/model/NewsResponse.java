@@ -8,6 +8,7 @@ public class NewsResponse {
     private String status;
     private int totalResults;
     private List<NewsArticle> articles;
+    private String message;
 
     // Default constructor
     public NewsResponse() {}
@@ -35,5 +36,13 @@ public class NewsResponse {
 
     public void setArticles(List<NewsArticle> articles) {
         this.articles = articles;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
     }
 }
