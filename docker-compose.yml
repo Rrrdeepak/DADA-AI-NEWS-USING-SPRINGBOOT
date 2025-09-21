@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  daily-news-app:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - NEWS_API_KEY=${NEWS_API_KEY}
+      - NEWS_API_URL=https://newsapi.org/v2/top-headlines
+    restart: unless-stopped
