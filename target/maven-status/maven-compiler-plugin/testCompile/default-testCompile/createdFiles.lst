@@ -1,6 +1,0 @@
-com\example\dailynewsapp\model\NewsArticleTest.class
-com\example\dailynewsapp\model\SourceTest.class
-com\example\dailynewsapp\service\NewsServiceTest.class
-com\example\dailynewsapp\controller\NewsControllerTest.class
-com\example\dailynewsapp\DailyNewsAppApplicationTest.class
-com\example\dailynewsapp\model\NewsResponseTest.class

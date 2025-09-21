@@ -243,6 +243,21 @@
             </div>
         </div>
 
+        <!-- Fallback Data Notification -->
+        <div th:if="${news != null and news.message != null and news.message.contains('sample data')}" class="row mb-3">
+            <div class="col-12">
+                <div class="alert alert-warning d-flex align-items-center" role="alert">
+                    <i class="fas fa-wifi me-2" style="font-style: normal;">📡</i>
+                    <div>
+                        <strong>Offline Mode:</strong> 
+                        <span th:text="${news.message}">Using sample data - API connection unavailable</span>
+                        <br>
+                        <small>Real-time news will resume when the connection is restored.</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- News Articles -->
         <div th:if="${news != null and news.articles != null and !news.articles.isEmpty()}" class="row">
             <div th:each="article : ${news.articles}" class="col-lg-4 col-md-6 col-sm-12">
